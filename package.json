@@ -1,0 +1,30 @@
+{
+  "name": "proyecto-node-jwt-ts",
+  "version": "0.0.1",
+  "description": "Crearmos un proyectyo con TypeScript,  autenticación JWT y base de datos relacional (PostgreSQL)",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/server.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "node dist/server.js"
+  },
+  "author": "German",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.15.30",
+    "prisma": "^6.9.0",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.9.0",
+    "bcrypt": "^6.0.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "typescript": "^5.8.3"
+  }
+}
